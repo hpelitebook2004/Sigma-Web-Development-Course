@@ -6,17 +6,102 @@
     <title>Document</title>
     <style>
 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
         .box{
             /* box-sizing: border-box; */
             border: 2px solid black;
-            width: 2048px;
+            /* width: 1080px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
             background-color: aquamarine;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+
+            /* width: 1080px; */
+
+            /* vw stands for Viewport width. */
+            width: 80vw;
+
+            /* vh stands for Viewport Height. */
+            /* height: 80vh; */
+
+            min-height: 80vh;
+
+            margin: 23px auto;
+            /* 16px is the default Value of Font- Size. */
+
+            /* px stands of Post Exchange. */
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container p{
+            /* rem stands for Root Element */
+            font-size: 2rem;
+            width: 50%;
+
+            /* em stands for Element */
+            /* font-size: 2em; */
+        }
+
+        .container div{
+            /* rem stands for Root Element */
+            font-size: 2rem;
+            width: 50%;
+            border: solid 7px maroon;
+
+            /* em stands for Element */
+            /* font-size: 2em; */
+        }
+
+        .container > div > div{
+            border: 5px solid blueviolet;
+            width: 50%;
+        }
+
+        .mycont{
+            background-color: yellow;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: violet;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
         }
     </style>
 </head>
 <body>
     <div class="box">
         This is a Box.
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eum at enim doloribus amet eaque dicta perferendis assumenda quod quos sunt voluptate exercitationem dolore cupiditate, dolorum molestias iste nam!
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam ad corrupti consectetur doloribus nulla, hic magni culpa! Reprehenderit soluta magni illo. Nihil ut suscipit aut. Quis dignissimos dolore facere est suscipit placeat, laboriosam maiores. Nobis optio odit ratione ducimus corporis, omnis ea facere commodi!
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem qui vel debitis maxime voluptates provident non repellendus obcaecati eos amet? Velit nesciunt nihil quis impedit voluptate, vitae odit error ea tempore nisi beatae architecto!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci neque tempora, quaerat reiciendis dolorem, voluptas excepturi optio cupiditate quibusdam, perspiciatis pariatur dolorum? Nemo cupiditate reiciendis culpa impedit hic iusto quae illum dignissimos qui animi. Aspernatur ipsa molestiae vitae dolor itaque expedita nulla nihil illum, explicabo nostrum facilis mollitia sint vero inventore esse reprehenderit pariatur labore? 
+        </p>
+    </div>
+
+    <div class="mycont">
+        I'm another Div in Lecture 22 same in another Lectures 😜.
     </div>
 </body>
 </html> 
