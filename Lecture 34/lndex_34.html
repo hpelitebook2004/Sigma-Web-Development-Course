@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid yellowgreen;
+            display: flow-root;
+        }
+        
+        img{
+            float: left;
+        }
+        .card{
+            border: 2px solid blueviolet;
+        }
+        .card:nth-child(3){
+            background-color: aquamarine;
+            clear: both ;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/47044/aircraft-landing-reach-injection-47044.jpeg" alt="" width="230">
+        <div class="card">Card 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam omnis possimus id, saepe explicabo eius doloribus asperiores quaerat cupiditate in, numquam officia neque iusto cumque aut sint fuga ipsam autem laudantium ea.</p>
+        </div>
+        <div class="card">Card 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat culpa nesciunt aut, nostrum, a quia illo rem voluptates mollitia alias ipsa nisi aliquam eligendi at odit accusamus reiciendis laboriosam non consectetur porro pariatur maxime praesentium impedit? Ipsam, vel. Eius accusamus, voluptatibus reiciendis temporibus eligendi facere sint laudantium atque quia dolore, labore assumenda saepe repellendus magni. Obcaecati praesentium voluptatibus est accusantium dolores, accusamus dolore pariatur quam quia laudantium vitae repellendus, dolor placeat totam at! Reprehenderit quas est, placeat perferendis fuga, esse vero eum ab recusandae, deserunt quos.</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

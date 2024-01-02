@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Solution by Me</title>
+    <style>
+        :root {
+            --font-background-color: rgb(205, 245, 7);
+            --background-color: rgba(85, 100, 168, 0.499);
+            --font-color: rgb(17, 0, 255);
+            --font-hover-color: rgb(145, 137, 255);
+            --border-color: rgb(255, 0, 0);
+            --border-hover-color: rgb(255, 99, 99);
+            --defop: 110%;
+            --defpad: 6px;
+            --defmar: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            padding: 10px 40px;
+            opacity: var(--defop);
+        }
+
+        .nav {
+            /* border: 2px solid var(--font-color); */
+            padding: var(--defpad);
+            color: var(--font-color);
+            background-color: var(--font-background-color);
+        }
+
+        .nav button {
+            padding: var(--defpad);
+            color: var(--font-color);
+            background-color: var(--font-background-color);
+            border: 3px solid var(--border-color);
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .nav button:hover {
+            color: var(--font-hover-color);
+            background-color: var(--font-background-color);
+            border: 3px solid var(--border-hover-color);
+            cursor: pointer; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <button>Like </button>
+        <button>Comment</button>
+        <button>Share </button>
+        <button>Subscribe</button>
+    </div>
+</body>
+
+</html>
