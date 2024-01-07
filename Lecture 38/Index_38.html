@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox - Ultimate MasterClass</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 105vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* This align-content function is commented when the align-self function is used. */
+            /* align-content: center; */ 
+            /* There is no justify-items in flex-box. */
+            flex-flow: row wrap;
+
+
+            /* Gap Properties */
+
+            /* gap: 10px; */
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            gap: 10px 20px;
+        }
+
+        .item {
+            /* By Default, Flex-Grow is taking the value is '0'. */
+            /* flex-grow: 1; */
+            height: 52px;
+            width: 52px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: aquamarine;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+            /* flex-grow: 3; */
+        }
+        .item1{
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item order-3">7</div>
+            <div class="item">8</div>
+            <div class="item order-1">9</div>
+            <div class="item order-3">10</div>
+            <!-- <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div>
+            <div class="item">10</div> -->
+        </div>
+    </main>
+</body>
+
+</html>

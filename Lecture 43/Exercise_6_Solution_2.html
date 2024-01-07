@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 Solution By Me (After Watching Solution 1 of Lecture 43) 
+        This is the better way to use the flex box in Lecture 41 & 43.
+    </title>
+    <style>
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .logo img{
+            width: 210px;
+        }
+
+        .container ul{
+            display: flex;
+            gap: 34px;
+        }
+
+        .container ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .container ul li span{
+            flex-wrap: wrap;
+            padding: 0px 3px;
+            font-size: 22px;
+        }
+
+        content p:nth-child(1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 43px;
+            padding: 80px 192px 25px 192px;
+            align-items: center;
+        }
+
+        content p:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 34px;
+            padding: 0px 142px 25px 142px;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #50c1e5;
+            color: white;
+            display: flex;
+            padding: 10px;
+            border: 2px solid white;
+            margin: 17px 33vw;
+            font-size: 31px;
+            border-radius: 13px;
+            text-decoration: none;
+            justify-content: center;
+            cursor: pointer;
+
+        }
+
+        .button:hover {
+            background-color: #80cae0;
+            color: white;
+            display: flex;
+            padding: 10px;
+            border: 2px solid white;
+            margin: 17px 33vw;
+            font-size: 31px;
+            border-radius: 13px;
+            text-decoration: none;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Screenshot 2024-01-06 134131.jpg" alt="">
+            </div>
+            <div class="container">
+                <ul>
+                    <li><span>Products</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Pricing</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>About us</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <content>
+            <p>Download UltraEdit for Windows <img src="Screenshot 2024-01-06 140337.jpg" alt=""></p>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor.</p>
+        </content>
+
+        <div class="button">
+            <a href="https://www.ultraedit.com/downloads/uex-thank-you/">
+            Download Mac and Linux Version
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>
